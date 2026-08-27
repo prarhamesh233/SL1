@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<style>
+
+    *{
+        margin:0;
+        font-family: Verdana;
+    }
+    html{
+        scroll-behavior:smooth;    
+    }
+
+    #navbar{
+        display: flex;
+        justify-content: end;
+        padding: 1% 1%;
+        background-color: whitesmoke;
+        
+    }
+    a{
+        text-decoration: none;
+        margin: 20px;
+        color: inherit;
+       
+    }
+    #main_div{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.519), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.401);
+        padding: 0% 3%;
+        height: 100%;
+    }
+    #personal_info{
+        width: 50%;
+        margin: 3% 0%;
+        color:rgba(245, 245, 245, 0.863)
+    }
+ 
+    #h1_special{
+        font-size: 4rem ;
+        color:#ffffffc9;
+        font-weight: 800;
+        margin-bottom: 0;
+        padding-top: 4%;
+    }
+    #h3_special{
+         color:rgba(245, 245, 245, 0.863)
+    }
+.btn{
+        display:inline-block;
+        padding:0.8% 0.7%;
+        font-size:20px;
+        font-weight:700;
+        margin-bottom:3%;
+        color:white;
+        border:1px solid rgba(255,255,255,.7);
+        text-decoration:none;
+        transition:transform .3s ease;
+}
+    .btn:hover{
+        transform: translateY(5px);
+        cursor:pointer;
+    }
+  
+    #skill_div, #education_div{
+        padding: 6% 3%;
+        background-color: whitesmoke;
+        height:auto;
+    }
+    ul{
+        list-style-type: none;
+        padding:0;
+        margin-top:20px;
+    }
+    li{
+        padding: 1% 0%;
+
+    }
+    .sub_heading{
+        font-size: 3rem;
+        font-weight: 800;
+
+    }
+    #projects_div{
+        position: relative;
+         background-image:  url('https://images.unsplash.com/photo-1554469384-e58fac16e23a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnVpbGRpbmd8ZW58MHx8MHx8fDA%3D');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.401);
+        background-color: aliceblue;
+        height:90vh;
+    }
+
+    #overlay_project{
+        background-color: rgba(245, 245, 245, 0.812);
+       position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 80%;
+        padding: 6% 3%;
+         box-sizing: border-box;
+        
+    }
+    .project_info{
+        padding-top: 3%;
+        width:60%
+    }
+   
+    .padding_div{ 
+        padding-top: 3%;
+    }
+    .education_info{
+       
+        width:60%
+    }
+    .footer_div{
+        display: flex;
+        justify-content: start;
+        padding: 3%;
+        position: relative;
+        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.519), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+         background-color: rgba(0, 0, 0, 0.401);
+         color: whitesmoke;
+    }
+    .footer_info{
+        width: 50%;
+        margin-right: 5%;
+        
+    }
+    .extra{
+        margin-right: 5%;
+        color: whitesmoke;
+    }
+ 
+</style>
+</head>
+<body>
+    <div id="navbar"><nav class="navbar">
+  <a href="#main_div">About Me</a>
+  <a href="#skill_div">Technical Skills</a>
+   <a href="#projects_div">Projects</a>
+   <a href="#education_div">Education</a>
+</nav></div>
+
+            <div id="main_div">
+                <div>
+            
+                    <div>
+                        <h1 id="h1_special">
+                            PRATHAMESH THAKUR
+                        </h1>
+                        <h2 id="h2_special">MTech TA (Cse)</h2></div>
+                        
+                    
+                    <div>
+                        <p id="personal_info">  <b>Hi, I'm Prathamesh</b>, a passionate MERN stack developer with a strong foundation in building dynamic, responsive web applications. With expertise in MongoDB, Express.js, React.js, and Node.js, I thrive on creating efficient, scalable solutions that meet the needs of both users and businesses. My commitment to clean, maintainable code and a deep understanding of data structures and algorithms allows me to tackle complex problems with ease. Let's connect and bring your ideas to life!</p>
+                    </div>
+                   <div>
+                  <a href="#skill_div" class="btn">Skills</a>
+                  <a href="#projects_div" class="btn">Projects</a>
+                   </div>
+                 </div>
+                    
+                  
+                </div>
+                
+                <div>
+                     <div id ="skill_div">
+                        <h1 class="sub_heading">TECHNICAL SKILLS</h1>
+                        <ul>
+                            <li><b>Programming Languages:</b>JavaScript, c, TypeScript, Java, Solidity</li>
+                            <li><b>Libraries and Frameworks:</b> React JS, Node JS, Express JS </li>
+                            <li><b>Databases:</b>MySQL, MongoDB</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div id="projects_div">
+                     <div id="overlay_project"> 
+                     <h1 class="sub_heading">PROJECTS</h1>
+                    <div class="project_info">
+                        <h2>NFT marketplace for real-estate</h2>
+                        <ul>
+                            <li>
+                                 Developed an NFT marketplace for real estate using React and Solidity, facilitating transparent and secure transactions on the Ethereum blockchain.
+                            </li>
+                            <li> Integrated blockchain technology for immutable property ownership records, implemented robust security measures in Solidity smart contracts.
+                            </li>
+                            <li>
+                                Emphasized decentralization principles in the design, reducing reliance on intermediaries and providing a peer-to-peer platform for real estate transactions.
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="project_info">
+                             <h2>Social media web application</h2>
+                        <ul>
+                            <li>
+                                 Developed a social media application using the MERN stack
+                            </li>
+                            <li> Leveraged MongoDB for efficient and scalable data storage.
+
+                            </li>
+                            <li>
+                                Implemented server-side logic with Express.js and Node.js, ensuring smooth communication between the frontend and back-end.
+
+                            </li>
+                        </ul>
+                            </div>
+                    </div>
+                </div>
+                <div id="education_div">
+                      <h1 class="sub_heading">EDUCATION</h1>
+                      <div class ="education_info">
+                        <div class="padding_div">
+                        <h2>Computer Engineering(2020 - 2024)</h2>
+                        <ul>
+                            <li>
+                                Guru Gobind Singh College of Engineering and Research Center
+                            </li>
+                            <li>
+                                CGPA-8.67
+                            </li>
+                        </ul>
+                        </div>
+
+                        <div class="padding_div">
+                        <h2>HSC(2018 - 2020)</h2>
+                        <ul>
+                            <li>
+                                Ryk College of Science
+                            </li>
+                            <li>
+                                Percentage-63.08%
+                            </li>
+                        </ul>
+                         </div>
+
+                        <div class="padding_div">
+                        <h2>SSC(2018)</h2>
+                        <ul>
+                            <li>
+                                Vidya Prabhodini Prashala
+                            </li>
+                            <li>
+                                Percentage-81%
+                            </li>
+                        </ul>
+                        </div>
+                      </div>
+
+                </div>
+                <footer class="footer_div">
+                    <div></div>
+                        <div class="footer_info">
+                            <h2> PRATHAMESH THAKUR</h2>
+                            
+                            <p><b>Hi, I'm Prathamesh</b>, a passionate MERN stack developer with a strong foundation in building dynamic, responsive web applications. With expertise in MongoDB, Express.js, React.js, and Node.js, I thrive on creating efficient, scalable solutions that meet the needs of both users and businesses. My commitment to clean, maintainable code and a deep understanding of data structures and algorithms allows me to tackle complex problems with ease. Let's connect and bring your ideas to life!</p>
+                        </div>
+                        <div class="extra">
+                                <h2>Quick Links</h2>
+                                <ul>
+                                <li><a href="#main_div">About Me</a></li>
+                                <li><a href="#skill_div">Technical Skills</a></li>
+                                <li><a href="#projects_div">Projects</a></li>
+                                </ul>
+
+                    
+                        </div>
+                        <div class="extra">
+                            <h2>Contact Me</h2>
+                            <ul>
+                                <li>prathameshthakur666@gmail.com</li>
+                            <li><a href="https://www.linkedin.com/in/prathamesh-thakur-397b95250/" target = "_blank">linkedin</a></li>
+                            <li>8767417258</li>
+                            </ul>
+                            
+                        </div>
+                    
+                </footer>
+
+</body>
+
+</html>
+
